@@ -1,0 +1,110 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: cursive;
+	background: #282828;
+	background: linear-gradient(deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient{
+	0%{
+		background-position: 0% 50%
+	}
+	50%{
+		background-position: 100% 50%
+	}
+	100%{
+		background-position: 0% 50%
+	}
+}
+
+.container{
+	width: 98%;
+	margin: 0 auto;
+}
+
+header{
+	background: rgba(0,0,0,.5);
+	padding: 1%;
+}
+
+.logo{
+	height: 20%;
+	width: 20%;
+	padding: 15px 0;
+	float: center;
+	transition: .3s;
+	cursor: pointer;
+}
+
+.logo:hover{
+	height: 23%;
+	width: 23%;
+	transition: .3s;
+}
+
+h2{
+	font-family: cursive;
+	font-weight: lighter;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	padding-top: 0;
+	margin: 0;
+}
+
+h3{
+	font-family: cursive;
+	font-weight: lighter;
+	font-size: 25px;
+	color: white;
+	text-align: center;
+	padding-top: 0;
+	margin: 0;
+}
+
+.button{
+	font-family: Verdana;
+	text-transform: uppercase; 
+	margin: 2%;
+	border: none;
+	outline: none;
+	height: 35px;
+	width: 100px;
+	color: white;
+	font-size: 15px;
+	background: #ff3f34;
+	cursor: pointer;
+	border-radius: 30px;
+	transition: .5s;
+}
+
+.button:hover{
+	background: #485460;
+	letter-spacing: 1px;
+	transition: .5s;
+}
+
+/*textarea{
+	outline: none;
+	font-family: cursive;
+	font-size: 10px;
+	color: white;
+	border-style: solid;
+	border-width: 100px;
+	border-radius: 10px;
+	border-color: white; 
+}*/
+
+.copyright{
+	font-family: Verdana;
+	font-weight: lighter;
+	font-size: 12px;
+	color: black;
+	position: absolute;
+	top: 97%;
+	left: 75%;
+}
