@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="icon" href="img/Nostalgicsicon.png">
+	<link rel="stylesheet" type="text/css" href="login.css">
+    <script type="text/javascript"></script>
+</head>
+		<body>
+			<center>
+				<header class="container">
+					<a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+				</header>
+				<main>
+					<div class="loginbox">
+						<form>
+							<p><h3 class="login">Login</h3></p>
+							<p><h3 class="use">Use your Nostalgics Account</h3></p>
+							<p>
+								<input type="text" id="username" name="username" placeholder="Username" value="" required>
+							</p>
+							<p>
+								<input type="password" id="password" placeholder="Password" value="" required/>
+							</p>
+							<p>
+								<input type="submit" name="submit" id="login-button" value="Login" onClick="check()"/>
+							</p>
+							<p>
+								<button class="forgot" onclick="window.location.href = 'accountreset.html';">Forgot username or password?</button>
+								<hr>
+								<!--<span style="color: white;"><i>or</i></span>-->
+
+								<div style="color: grey;font-family: Verdana;"><b>Don't have an account?</b></div>
+
+								<button class="create" onclick="window.location.href = 'signup.html';">Sign Up</button>
+							</p>
+						</form>
+					</div>
+				</main>
+				<footer>
+				</footer>
+			</center>
+		</body>
+            <script>
+                document.getElementById("login-button").onclick = function(){ //When the loggin button is pressed				
+                if(document.getElementById("username").value == localStorage.getItem("userName") //Checks if the username from the form is equal to the storage one
+                   && document.getElementById("password").value == localStorage.getItem("passWord") //Checks if the password from the form is equal to the storage one
+                  ){
+                    alert('Succesfully logged in.') //Displays success message
+                }else{
+                    alert('Incorrect attempt')
+                }
+            }
+            </script>
+</html>
